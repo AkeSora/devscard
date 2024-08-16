@@ -18,6 +18,97 @@ skill({ description: '...' }) — returns skill with a description displayed whe
 
 */
 
+export const html5 = createSkillFactory({
+  name: 'HTML 5',
+  icon: 'simple-icons:html5',
+  iconColor: '#E34F26',
+  url: 'https://www.apollographql.com/',
+});
+
+export const allegro = createSkillFactory({
+  name: 'Allegro',
+  icon: 'simple-icons:allegro',
+  iconColor: '#FF5A00',
+  url: 'https://www.allegro.pl/',
+});
+
+export const kubernetes = createSkillFactory({
+  name: 'Kubernetes (K8s)',
+  icon: 'simple-icons:kubernetes',
+  iconColor: '#326CE5',
+  url: 'https://kubernetes.io//',
+});
+
+export const network = createSkillFactory({
+  name: 'Network',
+  icon: 'mdi:ip-network-outline',
+  iconColor: '#21a3dd',
+  url: 'https://www.tp-link.com/en/',
+});
+
+export const homelab = createSkillFactory({
+  name: 'Homelab',
+  icon: 'fluent-mdl2:my-network',
+  iconColor: '#2E75B4',
+  url: '',
+});
+
+export const portainer = createSkillFactory({
+  name: 'Portainer',
+  icon: 'devicon:portainer',
+  iconColor: '#13BEF9',
+  url: 'https://www.portainer.io/',
+});
+
+export const photoshop = createSkillFactory({
+  name: 'Adobe Photoshop',
+  icon: 'simple-icons:adobephotoshop',
+  iconColor: '#31A8FF',
+  url: 'https://www.adobe.com/pl/products/photoshop.html',
+});
+
+export const illustrator = createSkillFactory({
+  name: 'Adobe Ilustrator',
+  icon: 'simple-icons:adobeillustrator',
+  iconColor: '#FF9A00',
+  url: 'https://www.adobe.com/pl/products/illustrator.html',
+});
+
+export const it = createSkillFactory({
+  name: 'IT',
+  icon: 'game-icons:pc',
+  iconColor: '#E696969',
+  url: 'https://www.zs3.sanok.pl/zs3/o-szkole',
+});
+
+export const docker = createSkillFactory({
+  name: 'Docker',
+  icon: 'simple-icons:docker',
+  iconColor: '#2496ED',
+  url: 'https://www.docker.com/',
+});
+
+export const css3 = createSkillFactory({
+  name: 'CSS 3',
+  icon: 'simple-icons:css3',
+  iconColor: '#1572B6',
+  url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+});
+
+export const cctv = createSkillFactory({
+  name: 'CCTV',
+  icon: 'bxs:cctv',
+  iconColor: '#696969',
+  url: 'https://global.uniview.com/',
+});
+
+export const gimp = createSkillFactory({
+  name: 'GIMP',
+  icon: 'simple-icons:gimp',
+  iconColor: '#5C5543',
+  url: 'https://www.gimp.org//',
+});
+
 export const apolloGraphql = createSkillFactory({
   name: 'Apollo GraphQL',
   icon: 'simple-icons:apollographql',

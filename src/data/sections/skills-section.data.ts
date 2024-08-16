@@ -17,61 +17,105 @@ import {
   supabase,
   tailwindCss,
   typescript,
+  html5,
+  gimp,
+  cctv,
+  css3,
+  it,
+  docker,
+  photoshop,
+  illustrator,
+  portainer,
+  homelab,
+  network,
+  kubernetes,
+  allegro,
 } from '../helpers/skills';
 
 const skillsSectionData = {
   config: {
-    title: 'Skills',
+    title: 'Umiejętności',
     slug: 'skills',
     icon: 'fa6-solid:bars-progress',
     visible: true,
   },
   skillSets: [
     {
-      title: 'I already know',
+      title: 'Posiadane',
       skills: [
-        react({
+        it({
+          level: 5,
+          description: 'Ukończony kierunek Technik Informatyk z wszystkimi egzaminami wraz z dodatkowymi szkoleniami.',
+        }),
+
+        html5({
+          level: 2,
+          description: 'Podstawowa konfiguracja i modyfikacja stron internetowych.',
+        }),
+
+        css3({
+          level: 2,
+          description: 'Podstawowe konfiguracja i modyfikacja stron internetowych',
+        }),
+
+        astro({
+          level: 1,
+          description: 'Wiedza pozwalająca na modyfikację gotowych projektów.',
+        }),
+
+        cctv({
           level: 5,
           description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+            'Konfiguracja i wiedza poparta doświadczeniem i certyfikatami od producetów: Uniview, BCS, Hikvision, Dahua.',
         }),
-        typescript({
-          level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+
+        gimp({
+          level: 5,
+          description: 'Obróbka graficzna zdjęć, kadrowanie i modyfikowanie kolorów, tworzenie miniaturek i banerów.',
         }),
-        sass({
-          level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
+
+        photoshop({
+          level: 2,
+          description: 'Obróbka graficzna zdjęć, kadrowanie i modyfikowanie kolorów, tworzenie miniaturek i banerów.',
         }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
-          level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
+
+        illustrator({
+          level: 2,
+          description: 'Obróbka graficzna zdjęć, kadrowanie i modyfikowanie kolorów, tworzenie miniaturek i banerów.',
         }),
-        nestJs({
+
+        docker({
           level: 3,
           description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+            'Tworzenie i modyfikowanie dockerów, tworzenie serwerów i poszczególnych systemów: np. zaawansowany serwer Minecraft.',
         }),
-        postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+
+        portainer({
+          level: 2,
+          description: 'Głównie wykorzystywany do zarządzania Dockerami.',
+        }),
+
+        homelab({
+          level: 3,
+          description:
+            'Tematy związane z Homelab, czyli: Mini-PC, Serwery, Home Assistant, CasaOS/ZimaOS, OpentWRT, Programy OpenSource.',
+        }),
+
+        network({
+          level: 4,
+          description: 'Wiedza na temat portfolio produktów i ich konfiguacji urządzeń sieciowych.',
+        }),
       ],
     },
     {
-      title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
+      title: 'Chciałbym się nauczyć/doszkolić:',
+      skills: [tailwindCss(), astro(), docker(), kubernetes()],
     },
     {
-      title: 'I speak',
+      title: 'Języki',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        { icon: 'circle-flags:pl', name: 'Polski - natywnie' },
+        { icon: 'circle-flags:us', name: 'Angielski - B1' },
       ],
     },
   ],

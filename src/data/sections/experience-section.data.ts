@@ -11,14 +11,16 @@ import {
   react,
   reactQuery,
   tailwindCss,
+  allegro,
   typescript,
   vue,
+  gimp,
 } from '../helpers/skills';
 
 const experienceSectionData = {
   config: {
-    title: 'Work experience',
-    slug: 'experience',
+    title: 'Doświadczcenie',
+    slug: 'Doswiadczenie',
     icon: 'fa6-solid:suitcase',
     visible: true,
   },
@@ -60,21 +62,18 @@ const experienceSectionData = {
       links: [website({ url: '#' }), instagram({ url: '#' })],
     },
     {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
+      role: 'Obsługa Sklepu Internetowego',
+      company: 'CSB',
+      image: import('@/assets/logos/csb-logo1.png'),
+      dates: [new Date('2021-08'), new Date('2021-11')],
       description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
-
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
-
-        Donec non vulputate augue 🤓
+        Tworzenie i wrzucanie aukcji na Allegro.
+        Tworzenie i wrzucanie zdjęć do aukcji na Allegro.
+        Modyfikowanie grafik pod poszczególne produkty
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
+        tags: [allegro(), gimp(), pnpm()],
       },
       links: [twitter({ url: '#' }), github({ url: '#' })],
     },
